@@ -17,6 +17,9 @@
     --text-18: 18px;
     --text-16: 16px;
     --color-bg-color: #f6f5f6;
+    --spacing-1000: 80px;
+    --spacing-800: 64px;
+    --spacing-400: 32px;
   }
 }
 @layer base {
@@ -177,6 +180,40 @@
   .table {
     display: table;
   }
+  .h-full {
+    height: 100%;
+  }
+  .w-\[118px\] {
+    width: 118px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[375px\] {
+    max-width: 375px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .px-400 {
+    padding-inline: var(--spacing-400);
+  }
+  .pt-800 {
+    padding-top: var(--spacing-800);
+  }
+  .pt-1000 {
+    padding-top: var(--spacing-1000);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -184,7 +221,6 @@
 }
 body {
   background-color: var(--color-bg-color);
-  color: var(--color-white);
 }
 .text-preset-1 {
   font-family: var(--font-red-hat-display);
@@ -218,6 +254,11 @@ body {
   font-weight: 900;
   line-height: 1.5;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -226,6 +267,7 @@ body {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-outline-style: solid;
     }
   }

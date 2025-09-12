@@ -50,7 +50,7 @@
 
 body {
   background-color: var(--color-bg-color);
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }
 
 .text-preset-1 {
