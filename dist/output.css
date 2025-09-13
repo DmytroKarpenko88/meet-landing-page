@@ -8,7 +8,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-cyan-300: #8fe3f9;
+    --color-cyan-600: #4d96a9;
+    --color-purple-300: #d9b8ff;
+    --color-purple-600: #855fb1;
+    --color-slate-300: #d1d1df;
+    --color-slate-600: #87879d;
+    --color-slate-900: #28283d;
     --color-white: #fafafa;
+    --spacing: 0.25rem;
+    --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-red-hat-display: 'Red Hat Display', sans-serif;
@@ -19,7 +28,12 @@
     --color-bg-color: #f6f5f6;
     --spacing-1000: 80px;
     --spacing-800: 64px;
+    --spacing-700: 56px;
+    --spacing-500: 40px;
     --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-50: 4px;
   }
 }
 @layer base {
@@ -171,39 +185,195 @@
   }
 }
 @layer utilities {
+  .relative {
+    position: relative;
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-300 {
+    margin-block: var(--spacing-300);
+  }
+  .mt-200 {
+    margin-top: var(--spacing-200);
+  }
+  .mt-400 {
+    margin-top: var(--spacing-400);
   }
   .contents {
     display: contents;
   }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-700 {
+    height: var(--spacing-700);
+  }
+  .h-1000 {
+    height: var(--spacing-1000);
+  }
+  .h-\[56px\] {
+    height: 56px;
+  }
+  .h-\[144px\] {
+    height: 144px;
+  }
+  .h-\[160px\] {
+    height: 160px;
+  }
+  .h-\[200px\] {
+    height: 200px;
   }
   .h-full {
     height: 100%;
   }
+  .max-h-\[144px\] {
+    max-height: 144px;
+  }
+  .w-700 {
+    width: var(--spacing-700);
+  }
+  .w-\[1px\] {
+    width: 1px;
+  }
   .w-\[118px\] {
     width: 118px;
+  }
+  .w-\[147px\] {
+    width: 147px;
+  }
+  .w-\[161px\] {
+    width: 161px;
+  }
+  .w-\[193px\] {
+    width: 193px;
+  }
+  .w-\[375px\] {
+    width: 375px;
   }
   .w-full {
     width: 100%;
   }
+  .max-w-\[147px\] {
+    max-width: 147px;
+  }
   .max-w-\[375px\] {
     max-width: 375px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .cursor-pointer {
+    cursor: pointer;
   }
-  .resize {
-    resize: both;
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-50 {
+    gap: var(--spacing-50);
+  }
+  .gap-200 {
+    gap: var(--spacing-200);
+  }
+  .gap-300 {
+    gap: var(--spacing-300);
+  }
+  .gap-800 {
+    gap: var(--spacing-800);
+  }
+  .overflow-visible {
+    overflow: visible;
+  }
+  .rounded-\[29px\] {
+    border-radius: 29px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-slate-300 {
+    border-color: var(--color-slate-300);
+  }
+  .bg-cyan-600 {
+    background-color: var(--color-cyan-600);
+  }
+  .bg-purple-600 {
+    background-color: var(--color-purple-600);
+  }
+  .bg-slate-300 {
+    background-color: var(--color-slate-300);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-\[url\(\.\/assets\/desktop\/image-woman-in-videocall\.jpg\)\] {
+    background-image: url(./assets/desktop/image-woman-in-videocall.jpg);
+  }
+  .bg-\[url\(\.\/assets\/mobile\/image-footer\.jpg\)\] {
+    background-image: url(./assets/mobile/image-footer.jpg);
+  }
+  .bg-\[url\(\/assets\/mobile\/image-footer\.jpg\)\] {
+    background-image: url(/assets/mobile/image-footer.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-position-\[center_top_1rem\] {
+    background-position: center top 1rem;
+  }
+  .bg-position-\[center_top_108px\] {
+    background-position: center top 108px;
+  }
+  .bg-position-\[center_top_\] {
+    background-position: center top ;
+  }
+  .bg-top {
+    background-position: top;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
   .px-400 {
     padding-inline: var(--spacing-400);
+  }
+  .px-500 {
+    padding-inline: var(--spacing-500);
+  }
+  .py-200 {
+    padding-block: var(--spacing-200);
+  }
+  .py-800 {
+    padding-block: var(--spacing-800);
+  }
+  .pt-400 {
+    padding-top: var(--spacing-400);
   }
   .pt-800 {
     padding-top: var(--spacing-800);
@@ -211,12 +381,56 @@
   .pt-1000 {
     padding-top: var(--spacing-1000);
   }
-  .underline {
-    text-decoration-line: underline;
+  .pb-400 {
+    padding-bottom: var(--spacing-400);
+  }
+  .pb-800 {
+    padding-bottom: var(--spacing-800);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-cyan-300 {
+    color: var(--color-cyan-300);
+  }
+  .text-cyan-600 {
+    color: var(--color-cyan-600);
+  }
+  .text-purple-300 {
+    color: var(--color-purple-300);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-slate-900 {
+    color: var(--color-slate-900);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .bg-blend-color {
+    background-blend-mode: color;
+  }
+  .bg-blend-multiply {
+    background-blend-mode: multiply;
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:bg-\[\#71c0d4\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #71c0d4;
+      }
+    }
+  }
+  .hover\:bg-\[\#b18bdd\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #b18bdd;
+      }
+    }
   }
 }
 body {
@@ -234,12 +448,26 @@ body {
   font-weight: 900;
   line-height: 1.1;
 }
+.text-preset-2_1 {
+  font-family: var(--font-red-hat-display);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+}
 .text-preset-3 {
   font-family: var(--font-red-hat-display);
   font-size: var(--text-16);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.text-preset-3_1 {
+  font-family: var(--font-red-hat-display);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.33em;
   text-transform: uppercase;
 }
 .text-preset-4 {
@@ -252,6 +480,12 @@ body {
   font-family: var(--font-red-hat-display);
   font-size: var(--text-16);
   font-weight: 900;
+  line-height: 1.5;
+}
+.text-preset-6 {
+  font-family: var(--font-red-hat-display);
+  font-size: var(--text-16);
+  font-weight: 500;
   line-height: 1.5;
 }
 @property --tw-border-style {

@@ -24,24 +24,124 @@
     </header>
 
     <main>
-      <section class="pt-800">
-        <div class="max-w-[375px] px-400">
-          <div>
-            <img src="./assets/tablet/image-hero.png" alt="image-hero" />
+      <section class="pt-800 pb-400">
+        <div
+          class="w-[375px] px-400 mx-auto overflow-visible flex flex-col gap-12"
+        >
+          <figure class="flex justify-center gap- h-[160px]">
+            <img
+              src="./assets/desktop/image-hero-left.png"
+              alt="hero-left"
+              class="object-cover h-full"
+            />
+            <img
+              src="./assets/desktop/image-hero-right.png"
+              alt="hero-right"
+              class="object-cover h-full"
+            />
+          </figure>
+
+          <div class="flex flex-col items-center text-center gap-300">
+            <h1 class="text-preset-2 text-slate-900">
+              Group Chat for Everyone
+            </h1>
+            <p class="text-preset-6 text-slate-600">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </p>
+            <div
+              class="flex flex-col items-center gap-200 text-white text-preset-5"
+            >
+              <button
+                class="px-500 py-200 bg-cyan-600 hover:bg-[#71c0d4] cursor-pointer rounded-[29px] w-[193px] h-[56px] flex gap-50"
+              >
+                <span>Download </span><span class="text-cyan-300">v1.3</span>
+              </button>
+              <button
+                class="px-500 py-200 bg-purple-600 hover:bg-[#b18bdd] cursor-pointer rounded-[29px] w-[161px]"
+              >
+                What is it?
+              </button>
+            </div>
           </div>
-          <div>
-            <h1></h1>
+        </div>
+      </section>
+
+      <section class="pt-400 pb-800">
+        <div class="max-w-[375px] px-400 mx-auto flex flex-col gap-800">
+          <div class="flex flex-col items-center">
+            <div class="h-1000 w-[1px] bg-slate-300"></div>
+            <div
+              class="text-preset-6 text-slate-600 w-700 h-700 rounded-full border border-slate-300 flex items-center justify-center"
+            >
+              01
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-200">
+            <img
+              src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="image-woman-in-videocall"
+              class="w-[147px] h-[144px] object-cover rounded-lg"
+            /><img
+              src="./assets//desktop/image-women-videochatting.jpg"
+              alt="image-women-videochatting"
+              class="w-[147px] h-[144px] object-cover rounded-lg"
+            /><img
+              src="./assets/desktop/image-men-in-meeting.jpg"
+              alt="image-men-in-meeting"
+              class="w-[147px] h-[144px] object-cover rounded-lg"
+            /><img
+              src="./assets/desktop/image-man-texting.jpg"
+              alt="image-man-texting.jpg"
+              class="w-[147px] h-[144px] object-cover rounded-lg"
+            />
+          </div>
+
+          <div class="text-center">
+            <p class="text-preset-3_1 text-cyan-600">Built for modern use</p>
+            <h2 class="mt-200 text-preset-2_1">
+              Smarter meetings, all in one place
+            </h2>
+            <p class="mt-400 text-preset-6 text-slate-600">
+              Send messages, share files, show your screen, and record your
+              meetings — all in one workspace. Control who can join with
+              invite-only team access, data encryption, and data export.
+            </p>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
-    Meet makes it easy to connect with others face-to-face virtually and
-    collaborate across any device. Download v1.3 What is it? 01 Built for modern
-    use Smarter meetings, all in one place Send messages, share files, show your
-    screen, and record your meetings — all in one workspace. Control who can
-    join with invite-only team access, data encryption, and data export. 02
-    Experience more together Stay connected with reliable HD meetings and
-    unlimited one-on-one and group video sessions. Download v1.3
+
+    <footer
+      class="relative bg-[url(/assets/mobile/image-footer.jpg)] bg-cover bg-position-[center_top_108px] bg-no-repeat"
+    >
+      <!-- <div
+        class="bg-cyan-600 bg-[url(/assets/mobile/image-footer.jpg)] bg-cover bg-top w-full h-[200px]"
+      ></div> -->
+      <div class="max-w-[375px] px-400 mx-auto flex flex-col gap-9">
+        <div class="flex flex-col items-center px-400">
+          <div class="h-1000 w-[1px] bg-slate-300"></div>
+          <div
+            class="text-preset-6 text-slate-600 w-700 h-700 rounded-full border border-slate-300 flex items-center justify-center bg-white"
+          >
+            02
+          </div>
+        </div>
+
+        <div class="text-center text-white pb-800">
+          <h2 class="text-preset-2_1">Experience more together</h2>
+          <p class="my-300 text-preset-6">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button
+            class="px-500 py-200 bg-purple-600 hover:bg-[#b18bdd] cursor-pointer rounded-[29px] w-[193px] h-[56px] flex gap-50 mx-auto"
+          >
+            <span>Download </span><span class="text-purple-300">v1.3</span>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

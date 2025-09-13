@@ -65,12 +65,26 @@ body {
   font-weight: 900;
   line-height: 1.1;
 }
+.text-preset-2_1 {
+  font-family: var(--font-red-hat-display);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+}
 .text-preset-3 {
   font-family: var(--font-red-hat-display);
   font-size: var(--text-16);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.text-preset-3_1 {
+  font-family: var(--font-red-hat-display);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.33em;
   text-transform: uppercase;
 }
 .text-preset-4 {
@@ -83,6 +97,12 @@ body {
   font-family: var(--font-red-hat-display);
   font-size: var(--text-16);
   font-weight: 900;
+  line-height: 1.5;
+}
+.text-preset-6 {
+  font-family: var(--font-red-hat-display);
+  font-size: var(--text-16);
+  font-weight: 500;
   line-height: 1.5;
 }
 
