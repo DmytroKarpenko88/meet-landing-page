@@ -185,8 +185,17 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .mx-auto {
     margin-inline: auto;
@@ -199,6 +208,12 @@
   }
   .mt-400 {
     margin-top: var(--spacing-400);
+  }
+  .mt-\[36px\] {
+    margin-top: 36px;
+  }
+  .-mb-\[28px\] {
+    margin-bottom: calc(28px * -1);
   }
   .contents {
     display: contents;
@@ -333,14 +348,32 @@
   .bg-\[url\(\.\/assets\/mobile\/image-footer\.jpg\)\] {
     background-image: url(./assets/mobile/image-footer.jpg);
   }
+  .bg-\[url\(\/assets\/desktop\/image-footer\.jpg\)\] {
+    background-image: url(/assets/desktop/image-footer.jpg);
+  }
   .bg-\[url\(\/assets\/mobile\/image-footer\.jpg\)\] {
     background-image: url(/assets/mobile/image-footer.jpg);
+  }
+  .bg-\[url\(\/assets\/tablet\/image-footer\.jpg\)\] {
+    background-image: url(/assets/tablet/image-footer.jpg);
+  }
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-contain {
+    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
   }
   .bg-center {
     background-position: center;
+  }
+  .bg-position-\[center_108px\] {
+    background-position: center 108px;
+  }
+  .bg-position-\[center_top\] {
+    background-position: center top;
   }
   .bg-position-\[center_top_1rem\] {
     background-position: center top 1rem;
@@ -381,6 +414,9 @@
   .pt-1000 {
     padding-top: var(--spacing-1000);
   }
+  .pt-\[36px\] {
+    padding-top: 36px;
+  }
   .pb-400 {
     padding-bottom: var(--spacing-400);
   }
@@ -408,6 +444,15 @@
   .text-white {
     color: var(--color-white);
   }
+  .opacity-75 {
+    opacity: 75%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .opacity-90 {
+    opacity: 90%;
+  }
   .bg-blend-color {
     background-blend-mode: color;
   }
@@ -430,6 +475,11 @@
       @media (hover: hover) {
         background-color: #b18bdd;
       }
+    }
+  }
+  .xl\:bg-\[url\(\/assets\/desctop\/image-footer\.jpg\)\] {
+    @media (width >= 1440px) {
+      background-image: url(/assets/desctop/image-footer.jpg);
     }
   }
 }
