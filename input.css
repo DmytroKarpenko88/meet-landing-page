@@ -142,6 +142,19 @@ body {
       letter-spacing: 0.01em;
     }
   }
+  .text-preset-7 {
+    font-family: var(--font-red-hat-display);
+    font-size: var(--text-16);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+
+    @media (min-width: 1440px) {
+      font-size: 18px;
+      letter-spacing: 0.01em;
+      text-align: start;
+    }
+  }
 
   .bg-decor {
     background-image: url('/assets/mobile/image-footer.jpg');
