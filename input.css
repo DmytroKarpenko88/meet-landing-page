@@ -170,7 +170,7 @@ body {
   }
   @media (min-width: 1440px) {
     .bg-decor {
-      background-image: url('/assets/desktop/image-footer.jpg');
+      background-image: url('./assets/desktop/image-footer.jpg');
     }
   }
 }
